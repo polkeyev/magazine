@@ -1,0 +1,454 @@
+//====================================================================================================
+header {
+	z-index: 4;
+	position: relative;
+	background-color: #fff;
+}
+.fhone {
+	background-image: url(../img/icons/phone.png);
+			background-repeat: no-repeat;
+			& ul {
+				margin: 0 0 0 30px;
+				& li a {
+					font-family: Roboto;
+					font-size: 15px;
+					line-height: 22px;
+					font-weight: 400;
+					color: #010101;
+				}
+				& li a span {
+					font-weight: 700;
+				}
+			}
+}
+.mail{
+	background-image: url(../img/icons/message.png);
+	background-repeat: no-repeat;
+	background-position-y: 4px;
+	li {
+		margin: 0px 0 0 33px;
+	}
+	a {
+		font-family: Roboto "sans-serif";
+		font-size: 15px;
+		line-height: 22px;
+		font-weight: 400;
+		color: #000000;
+	}
+}
+.header-bucket {
+	background-color: #00b5ab;
+	width: 9.67%;
+	position: relative;
+	&:hover{
+		background-color: #1bcdc3;
+	}
+	>img {
+		position: absolute;
+		top: 26px;
+    	left: 33%;
+	}
+	>a {
+		position: absolute;
+		top: 0;
+		left: 0;
+		height: 100%;
+		width: 100%;
+	}
+	>h2 {
+		opacity: 0.6;
+		font-family: Roboto;
+		font-size: 16px;
+		line-height: 18px;
+		font-weight: 400;
+		word-spacing: 5px;
+		text-align: center;
+		margin:90% 0 0 0;
+		color: #ffffff;
+	}
+}
+.header {
+
+		&__row {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__info {
+		}
+
+		&__bucket {
+			margin: 0 0 0 21px;
+		}
+}
+.container {
+}
+.header-info {
+		width: 90%;
+		display: flex;
+		flex-direction: column;
+		padding:21px 0 0 0;
+		&__top {
+		}
+
+		&__buttom {
+		}
+}
+.info-top {
+		display: flex;
+		justify-content: space-between;
+		&__logo {
+		}
+
+		&__fhone {
+			
+		}
+
+		&__info {
+			margin: 0 4% 0 0;
+		}
+
+		&__mail {
+		}
+
+		&__callback {
+			display: block;
+			margin: 11px 0 0 0;
+			font-family: Roboto;
+			font-size: 15px;
+			line-height: 22px;
+			font-weight: 400;
+			color: #ffffff;
+			padding:12px 24px;
+			background-color: #fc9a00;
+			&:hover {
+				background-color: #161615;
+			}
+		}
+
+		&__social-block {
+		}
+
+		&__social {
+			margin:0 0 24px 0;
+			display: flex;
+    		justify-content: flex-end;
+			a {
+				margin: 0 0 0 14px;
+				position: relative;
+				&:after {
+					content:"";
+					position: absolute;
+					top:0;
+					left:0;
+					height: 100%;
+					width: 100%;
+					background-color: rgba(255, 255, 255, 0);
+				}
+				&:hover:after {
+					background-color: rgba(255, 255, 255, 0.5);
+				}
+			}
+			a:first-child {
+				margin: 0 ;
+			}
+			a img {
+				width: 30px;
+				height: 30px;
+			}
+		}
+
+		&__login {
+			background-image: url(../img/icons/login.png);
+			background-repeat: no-repeat;
+			padding: 0 0 5px 35px;
+			a {
+				font-family: Roboto;
+				font-size: 15px;
+				line-height: 1.2;
+				font-weight: 900;
+				color: #000000;
+			}
+			a:last-child {
+				margin: 0 0 0 -4px;
+			}
+		}
+}
+
+.info-buttom {
+		display: flex;
+		justify-content: space-between;
+		&__catalog {
+		}
+
+		&__menu {
+			width: 41%;
+			padding:41px 0 0 0;
+			&>ul {
+				display: flex;
+				justify-content: space-between;
+				font-family: Roboto;
+				font-size: 15px;
+				line-height: 1.2;
+				font-weight: 500;
+				text-transform: uppercase;
+				&>li>a{
+					color: #000000;
+					&:hover {
+						color: #00b5ab;
+					}
+				}
+				>li {
+					position: relative;
+				}
+				>li:after {
+					content:'';
+					height: 12px;
+					border:0.5px solid #8b8787;
+					display: inline-block;
+					position: absolute;
+					top: 2px;
+    				left: -16px;
+					
+				}
+				li:first-child:after {
+					display: none;
+				}
+			}
+		}
+
+		&__search {
+			width: 25.3%;
+			padding: 25px 0 0 0;
+			&>form>input {
+				width: 100%;
+				padding:10px 0 10px 10px;
+				background-color: #f7f7f7;
+				background-image: url(../img/icons/lupa.png);
+				background-repeat: no-repeat;
+				background-position-x:95%;
+				background-position-y: 50%;
+				font-family: Roboto;
+				font-size: 15px;
+				line-height: 1.2;
+				font-weight: 400;
+				color: #000000;
+				caret-color : #ff9c00;
+				&:hover {
+				border: 1.0px solid #fe9b00;
+				caret-color : #ff9c00;
+				background-color: #fdf9e4;
+				}
+			}
+		}
+}
+.catalog {
+	    margin: 28px 0 0 0;
+		&__list {
+			>li {
+				position: relative;
+			}
+		}
+
+		&__link {
+			padding: 8px 180px 10px 12px;
+			display: block;
+    		width: 100%;
+    		height: 100%;
+			background-color: #e78216;
+			font-family: Roboto;
+			font-size: 18px;
+			line-height: 40px;
+			font-weight: 500;
+			text-transform: uppercase;
+			color: #ffffff;
+			position: relative;
+			span{
+				width: 15px;
+				height: 2px;
+				opacity: 0.4;
+				background-color: #ffffff;
+				display: block;
+				position: absolute;
+			}
+			span:first-child {
+				left: 85%;
+    			top: 50%;
+    			transform: rotate(54deg);
+			}
+			span:last-child{
+				right: 6.5%;
+    			transform: rotate(-54deg);
+    			top: 50%;
+			}
+		}
+}
+.sub-catalog {
+
+		&__list {
+			position: absolute;
+			left:0;
+			top:0;
+			width: 100%;
+			margin: 58.4px 0 0 0;
+			display: none;
+			background-color: #fb9a00;
+			
+			>li {
+				text-align: left;
+				position: relative;
+				padding: 0 0 0 10px;
+				&:hover{
+					background-color: #fff;
+					width: 111%;
+					right: 18px;
+					&:hover span {
+						background-color: black;
+					}
+				}
+				&:hover > a {
+					color:black;
+				}
+				span {
+					width: 15px;
+					height: 2px;
+					opacity: 0.4;
+					background-color: #ffffff;
+					display: block;
+					position: absolute;
+				}
+				span.span1 {
+					left: 90%;
+    				top: 40%;
+    				transform: rotate(45deg);
+				}
+				span.span2 {
+					left: 90%;
+    				top: 60%;
+    				transform: rotate(-45deg);
+				}
+
+
+				
+			}
+		}
+
+		&__link {
+			color:#fff;
+			font-family: Roboto;
+			font-size: 17px;
+			line-height: 55px;
+			font-weight: 400;
+			color: #ffffff;
+			
+		}
+}
+.last-catalog {
+
+		&__list {
+			position: absolute;
+			top:0;
+			left: 96%;
+    		z-index: -2;
+			display: none;
+			width: 100%;
+			background-color: #e78216;
+			>li {
+				text-align: left;
+				padding: 0 0 0 30px;
+				&:hover{
+					background-color: #fff;
+				}
+				&:hover > a {
+					color:black;
+				}
+			}
+			>li:last-child {
+				background-color: #fff;
+				position: relative;
+				color: black;
+				
+			}
+		}
+		&__span{
+			width: 15px;
+			height: 2px;
+			opacity: 0.4;
+			background-color: #fd9b00;
+			display: block;
+			position: absolute;
+			&:first-child{
+				width: 26px;
+				height:2px;
+				left: 120%;
+    			top: 55%;
+				background-color: #fd9b00;
+			}
+		}
+		&__link {
+			font-family: Roboto;
+			font-size: 17px;
+			line-height: 54px;
+			font-weight: 400;
+			color: #ffffff;
+			position:relative;
+			&:last-child {
+				color: black;
+			}
+			&>.last-catalog__span {
+				width: 15px;
+				height: 2px;
+				opacity: 0.4;
+				background-color: #fd9b00;
+				display: block;
+				position: absolute;
+				&:first-child{
+					width: 26px;
+					height:2px;
+					left: 120%;
+    				top: 55%;
+					background-color: #fd9b00;
+				}
+				&:nth-child(2){
+					left: 133%;
+    				top: 26%;
+    				transform: rotate(45deg);
+				}
+				&:nth-child(3){
+					left: 133%;
+    				top: 77%;
+    				transform: rotate(-45deg);
+				}
+
+			}
+			
+		}
+}
+
+body.mouse .catalog__list>li:hover .sub-catalog__list{display: block;}
+body.mouse .sub-catalog__list>li:hover .last-catalog__list{display: block;}
+
+//====================================================================================================
+/*
+	Стиль иконки бургера
+	.icon-menu{
+		display: block;
+		position: absolute;
+		top: 18px;
+		right: 10px;
+		width:30px;
+		height: 18px;
+		cursor: pointer;
+		z-index: 5;
+		span{@include anim(0.3s,0s);top: 8px;left: 0px;position: absolute;width: 100%;height: 2px;background-color: #000;
+			&:first-child{top: 0px;}
+			&:last-child{top: auto;bottom: 0px;}
+		}
+		&.active{
+			span{@include scale(0);
+				&:first-child{@include rotate(-45deg);top: 8px;}
+				&:last-child{@include rotate(45deg);bottom: 8px;}
+			}
+		}
+	}
+*/
