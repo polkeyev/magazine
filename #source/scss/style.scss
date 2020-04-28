@@ -102,52 +102,40 @@ opacity: 0;
 visibility: hidden;
 }
 
-/* Слайдер ----------------------------------------------------------------*/
-.slick-slider {
-    height: 100%;
-    position: relative;
+// Слайдер ----------------------------------------------------------------
+/* Слайдер */
+.slick-slider{}
+.product-card__slider-item .product-item .slick-slide {
+	width:289px;
 }
 /* Слайдер запущен */
-.slick-slider.slick-initialized {
-}
+.slick-slider.slick-initialized{}
 /* Слайдер с точками */
-.slick-slider.slick-dotted {
-}
+.slick-slider.slick-dotted{}
 /* Ограничивающая оболочка */
 .slick-list {
-    overflow: hidden;
-    width: 100%;
-    position: absolute;
-    height: 100%;
-}
-.slick-list .draggable{
-    width: 100%;
+	height: 100%;
+	overflow:hidden;
 }
 /* Лента слайдов */
-.slick-track {
-    display: flex;
-	justify-content: space-between;
-	position: absolute;
+.slick-track{
 	height: 100%;
+    display: flex;
 }
+
 /* Слайд */
-.slick-slide {
-}
+.slick-slide{}
 /* Слайд активный (показывается) */
-.slick-slide.slick-active {
-}
+.slick-slide.slick-active{}
 /* Слайд основной */
-.slick-slide.slick-current {
-}
+.slick-slide.slick-current{}
 /* Слайд по центру */
-.slick-slide.slick-center {
-}
+.slick-slide.slick-center{}
 /* Клонированный слайд */
-.slick-slide.slick-cloned {
-}
+.slick-slide.slick-cloned{}
 /* Стрелка */
-.slick-arrow  {
-    position: absolute;
+.slick-arrow{
+	position: absolute;
     display: inline!important;
     width: 60px;
 	height: 60px;
@@ -157,48 +145,29 @@ visibility: hidden;
     background-repeat: no-repeat;
     background-position: center;
     z-index: 3;
-   
-    @media screen and (max-device-width: 700px) {
-        display: none!important;
-    }
 }
-
-.slider-medium-but {
-    position: absolute;
-    background-color:#fff;
-    width: 10px;
-}
-
-.slider-foot-but {
-    width: 30px;
-    height: 30px;
-    background-color: #f3f3f3;
-}
-
 /* Стрелка влево */
-.slick-arrow.slick-prev {
-    background-image: url(../img/icons/leftarrow.png);
+.slick-arrow.slick-prev{
+	background-image: url(../img/icons/p-left.svg);
     top: 50%;
 	right: 97.2%;
-	
-}
-/* Стрелка вправо */
-.slick-arrow.slick-next {
-    left: 97.2%;
-    top: 50%;
-	background-image: url(../img/icons/rigtarrow.png);
 	&:hover {
-		background-image: url(../img/icons/yellowarrow.png);
+		background-image: url(../img/icons/p-lefty.svg);
 	}
 }
-
-/* Стрелка не активная */
-.slick-arrow.slick-disabled {
-    background-color: #fff;
+/* Стрелка вправо */
+.slick-arrow.slick-next{
+	left: 97.2%;
+    top: 50%;
+	background-image: url(../img/icons/p-right.svg);
+	&:hover {
+		background-image: url(../img/icons/p-righty.svg);
+	}
 }
+/* Стрелка не активная */
+.slick-arrow.slick-disabled{}
 /* Точки (булиты) */
-.slick-dots {
-    
+.slick-dots{
 	display: flex !important;
 	align-items: center;
     justify-content: center;
@@ -206,13 +175,13 @@ visibility: hidden;
     top: 90%;
     left: 50%;
 }
-.slick-dots li {
-    list-style: none;
+.slick-dots li{
+	list-style: none;
 	margin: 0 10px;
 }
 /* Активная точка */
 .slick-dots li.slick-active button {
-    &:after {
+	&:after {
     position: absolute;
     /* top: -11%; */
     bottom: -113%;
@@ -225,25 +194,15 @@ visibility: hidden;
 	}
 }
 /* Элемент точки */
-.slick-dots li button {
-    font-size: 0;
+.slick-dots li button{
+	font-size: 0;
 	width: 10px;
 	height: 10px;
 	/*border:1px solid #848789;*/
 	border-radius: 50%;
 	background-color:#fff;
 	position: relative;
-	/*&:after {
-		content:'';
-		width: 32px;
-		height: 32px;
-		border-radius:50%;
-		border:1px solid #fff;
-
-	}*/
 }
-/*-------------------------------------------*/
-
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 
 /*section sub-menu-slider======================================================================================*/
@@ -275,6 +234,7 @@ visibility: hidden;
 		&__body {
 			width: 100%;
 			height: 100%;
+			position:relative;
 		}
 
 		&__item {
@@ -378,20 +338,20 @@ visibility: hidden;
 		&__slider-body {
 			display: flex;
 			justify-content: space-between;
+			position: relative;
 		}
 
 		&__slider-item {
-			width: 25%;
+			width:289px;
 		}
 }
 .top-title {
 	max-width: 100%;
 	display: flex;
 	align-items: center;
-	justify-content: space-between;
+	justify-content: flex-end;
 	padding: 43px 10px 43px 10px;
 	h2 {
-		margin: 0 30% 0 auto;
 		font-family: Roboto;
 		font-size: 22px;
 		line-height: 22px;
@@ -401,6 +361,7 @@ visibility: hidden;
 	}
 
 	a {
+		margin: 0 0 0 351px;
 		display:block;
 		font-family: Roboto;
 		font-size: 16px;
@@ -417,7 +378,9 @@ visibility: hidden;
 		padding: 16px;
 		display: flex;
 		flex-direction: column;
-		flex: 0 1 25%;
+		width:289px;
+		border: 1px solid;
+		border-color: rgb(0%, 0%, 0%, 0);
 		&__link-img {
 			max-width: 100%;
 			height: 81%;
@@ -425,6 +388,9 @@ visibility: hidden;
 				object-fit: cover;
 				height: 100%;
 				width: 100%;
+			}
+			&:hover .product-item {
+				border-color:#ff9c00;
 			}
 		}
 		> h2 {
@@ -438,6 +404,7 @@ visibility: hidden;
 		}
 
 		>h3 {
+			margin: 20px 0 13px 0;
 			text-align: center;
 			font-family: Roboto;
 			font-size: 20px;
@@ -458,8 +425,9 @@ visibility: hidden;
 		&__link {
 			background:url(../img/bakcgraund/bagy.jpg);
 			background-repeat: no-repeat;
-			position: relative;
-			padding: 13px 0 13px 13px;
+			display: flex;
+			justify-content: center;
+			padding: 13px 0 13px 0;
 			text-align: center;
 			font-family: Roboto;
 			font-size: 15px;
@@ -472,16 +440,33 @@ visibility: hidden;
 				color: #010101;
 			}
 			>img {
-				position: absolute;
 				left: 72px;
 				width: 24px;
 				height: 22px;
 				margin: 0 12px 0 0;
 			}
+			&::before {
+				content:'';
+				background-image: url(../img/icons/corsina.svg);
+				background-position: center;
+				background-size: cover;
+				width: 24px;
+				height: 22px;
+				margin:0 12px 0 0;
+			}
+			&:hover::before {
+				background-image: url(../img/icons/corsina.svg.svg);
+			}
 		}
 
 		&__sub-link {
 			display:flex;
+			justify-content: center;
+			align-items: center;
+			margin:11px 0 0 0;
+			&:hover .product-item__sub-link_link {
+				color:#7c7373;
+			}
 
 			&_img {
 				width: 25px;
@@ -500,6 +485,7 @@ visibility: hidden;
 			}
 
 			&_link {
+				margin: 0 0 0 13px;
 				font-family: Roboto;
 				font-size: 14px;
 				line-height: 1.2;
@@ -509,8 +495,83 @@ visibility: hidden;
 		}
 }
 
+/*===stock-product===================================================================================*/
 
+.stock-product {
 
-//====================================================================================================
+		&__title {
+		}
+
+		&__wrapper {
+		}
+
+		&__slider {
+		}
+
+		&__slider-body {
+			display: flex;
+			position: relative;
+			margin: 0 0 42px 0;
+		}
+
+		&__slider-item {
+		}
+}
+/*======feedBack-form=============================================================================================*/
+.feedBack-form {
+
+		&__wrapper {
+			background-image: url(../img/bakcgraund/formback.jpg);
+			background-size: cover;
+			padding: 18px 114px;
+			display: flex;
+			justify-content: space-between;
+			align-items: center;
+		}
+
+		&__text {
+			font-family: Roboto;
+			font-size: 16px;
+			line-height: 22px;
+			font-weight: 500;
+			text-transform: uppercase;
+			color: #fefefe;
+		}
+
+		&__form {
+			width: 458px;
+			height: 38px;
+			border:1px solid #4CCBC4;
+			
+			input {
+				width: 100%;
+				height: 100%;
+				padding: 0 0 0 11px;
+				background: rgb(100%, 100%, 100%, 0) url(../img/icons/letter.svg) no-repeat;
+				background-position-y: 50%;
+				background-position-x: 410px;
+				/*background-image: url(../img/icons/letter.svg);*/
+				font-family: Roboto;
+				font-size: 14px;
+				line-height: 22px;
+				font-weight: 400;
+				color: #fff;
+				&:hover {
+					background: #66D3CD url(../img/icons/letter2.svg) no-repeat;
+					background-position-y: 50%;
+					background-position-x: 410px;
+
+				}
+				
+			}
+			input::placeholder {
+				font-family: Roboto;
+				font-size: 14px;
+				line-height: 22px;
+				font-weight: 400;
+				color: #fff;
+			}
+		}
+}
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
