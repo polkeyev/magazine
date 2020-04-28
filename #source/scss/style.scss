@@ -573,5 +573,48 @@ visibility: hidden;
 			}
 		}
 }
+/*========our-garant==================================================================================================*/
+.our-garant {
+		&__title {
+			>h2 {
+				margin: 0 auto;
+			}
+		}
+
+		&__wrapper {
+			display: flex;
+			justify-content: space-between;
+		}
+
+		&__item {
+			width: 262px;
+			margin: 0 15px;
+			padding:90px 0 24px 0;
+			display: flex;
+			flex: 1 1 auto;
+			position: relative;
+			flex-direction: column;
+			justify-content: center;
+			background-color: #fff;
+			box-shadow: 0 0 100px #EBEBEB;
+			>img {
+				position: absolute;
+				left: 50%;
+				top: 50px;
+				transform: translate(-50%,-50%);
+			}
+			>p {
+				text-align: center;
+				width: 160px;
+				margin: 0 auto;
+				font-family: Roboto;
+				font-size: 18px;
+				line-height: 22px;
+				font-weight: 600;
+				letter-spacing: 0;
+				color: #000000;
+			}
+		}
+}
 
 //</ОСНОВНОЙ БЛОК>====================================================================================================
