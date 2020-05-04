@@ -14,7 +14,10 @@ header {
 					font-size: 15px;
 					line-height: 22px;
 					font-weight: 400;
-					color: #010101;
+					transition: 0.3s;
+					&:hover{
+						color:#FFB100;
+					}
 				}
 				& li a span {
 					font-weight: 700;
@@ -33,9 +36,44 @@ header {
 		font-size: 15px;
 		line-height: 22px;
 		font-weight: 400;
-		color: #000000;
+		&:hover {
+			color:#FFB100;
+		}
 	}
 }
+
+.social {
+	
+			margin:0 0 24px 0;
+			display: flex;
+    		justify-content: flex-end;
+			a {
+				margin: 0 0 0 14px;
+				position: relative;
+				&:after {
+					content:"";
+					position: absolute;
+					top:0;
+					left:0;
+					height: 100%;
+					width: 100%;
+					border-radius: 50%;
+					background-color: rgba(255, 255, 255, 0);
+				}
+				&:hover:after {
+					background-color: rgba(255, 255, 255, 0.5);
+				}
+			}
+			a:first-child {
+				margin: 0 ;
+			}
+			a img {
+				width: 30px;
+				height: 30px;
+			}
+		
+}
+
 .header-bucket {
 	background-color: #00b5ab;
 	width: 9.67%;
@@ -101,7 +139,9 @@ header {
 		}
 
 		&__fhone {
-			
+			a {color: #000000;
+			}
+		
 		}
 
 		&__info {
@@ -109,6 +149,9 @@ header {
 		}
 
 		&__mail {
+			a {
+				color: #000000;
+			}
 		}
 
 		&__callback {
@@ -130,7 +173,7 @@ header {
 		}
 
 		&__social {
-			margin:0 0 24px 0;
+			/*margin:0 0 24px 0;
 			display: flex;
     		justify-content: flex-end;
 			a {
@@ -155,7 +198,7 @@ header {
 			a img {
 				width: 30px;
 				height: 30px;
-			}
+			}*/
 		}
 
 		&__login {

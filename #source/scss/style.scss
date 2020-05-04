@@ -79,28 +79,11 @@ body {
 //@import "baguetteBox.scss";
 //@import "pagging.scss";
 //@import "icons.scss";
-//@import "popup.scss";
+@import "popup.scss";
 @import "header.scss";
 @import "footer.scss";
 @import "home.scss";
 //</ПОДКЛЮЧЕНИЕ ФАЙЛОВ СТИЛЕЙ СТРАНИЦ И ЭЛЕМЕНТОВ>====================================================================================================
-.ibg{
-background-position: center;
-background-size: cover;
-background-repeat: no-repeat;
-position: relative;
-}
-
-.ibg img{
-
-width: 0;
-height: 0;
-position: absolute;
-top: 0;
-left: 0;
-opacity: 0;
-visibility: hidden;
-}
 
 // Слайдер ----------------------------------------------------------------
 /* Слайдер */
@@ -115,6 +98,7 @@ visibility: hidden;
 /* Ограничивающая оболочка */
 .slick-list {
 	height: 100%;
+	width: 100%;
 	overflow:hidden;
 }
 /* Лента слайдов */
@@ -175,6 +159,11 @@ visibility: hidden;
     top: 90%;
     left: 50%;
 }
+.top-footer__slider-body > .slick-dots{
+	top: 110%;
+	left: 45%;
+	z-index: 2;
+}
 .slick-dots li{
 	list-style: none;
 	margin: 0 10px;
@@ -193,6 +182,15 @@ visibility: hidden;
     border: 1px solid #fff;
 	}
 }
+
+.top-footer__slider-body > .slick-dots li.slick-active button {
+	background-color:#FD9B00 ;
+	&:after {
+	border: 1px solid #FD9B00;
+	bottom: -109%;
+    left: -106.5%;
+	}
+}
 /* Элемент точки */
 .slick-dots li button{
 	font-size: 0;
@@ -203,9 +201,13 @@ visibility: hidden;
 	background-color:#fff;
 	position: relative;
 }
+.top-footer__slider-body > .slick-dots li button {
+	background-color:#C6C1C1;
+}
 //<ОСНОВНОЙ БЛОК>====================================================================================================
 
 /*section sub-menu-slider======================================================================================*/
+
 .content-wrapper {
 	background-color: #f7f7f7;
 }
@@ -325,7 +327,6 @@ visibility: hidden;
 /*========================================================================================================*/
 
 .product-card {
-
 		&__title {
 		}
 
@@ -345,13 +346,61 @@ visibility: hidden;
 			width:289px;
 		}
 }
+
+.triangle {
+	&__text{
+		position: absolute;
+    	transform: rotate(-45deg);
+		font-family: Roboto;
+		font-size: 14px;
+		line-height: 1.2;
+		font-weight: 400;
+		color: #ffffff;
+	}
+		&_green {
+			border-top: 88px solid #39C05F;
+			border-right: 88px solid transparent;
+			position: absolute;
+			top:-1px;
+			left:-1px;
+				p {
+					bottom: 52px;
+				}
+		}
+		&_red{
+			border-top: 88px solid #FF411C;
+			border-right: 88px solid transparent;
+			position: absolute;
+			top:-1px;
+			left:-1px;
+				p {
+					bottom: 52px;
+    				left: 8px;
+				}
+		}
+		&_yellow{
+			border-top: 88px solid #FC9A00;
+			border-right: 88px solid transparent;
+			position: absolute;
+			top:-1px;
+			left:-1px;
+				p{
+					bottom: 44px;
+    				left: 0px;
+    				text-align: center;
+				}
+		}
+}
+
 .top-title {
 	max-width: 100%;
 	display: flex;
 	align-items: center;
 	justify-content: flex-end;
 	padding: 43px 10px 43px 10px;
+	position: relative;
 	h2 {
+		margin:0 auto;
 		font-family: Roboto;
 		font-size: 22px;
 		line-height: 22px;
@@ -361,7 +410,7 @@ visibility: hidden;
 	}
 
 	a {
-		margin: 0 0 0 351px;
+		position: absolute;
 		display:block;
 		font-family: Roboto;
 		font-size: 16px;
@@ -377,6 +426,7 @@ visibility: hidden;
 .product-item {
 		padding: 16px;
 		display: flex;
+		position:relative;
 		flex-direction: column;
 		width:289px;
 		border: 1px solid;
@@ -613,6 +663,148 @@ visibility: hidden;
 				font-weight: 600;
 				letter-spacing: 0;
 				color: #000000;
+			}
+		}
+}
+
+/*========top-footer=========================================================================================*/
+.top-footer {
+
+		&__title {
+			>h2 {
+				margin:0 auto;
+			}
+		}
+
+		&__slider-wrapper {
+		}
+
+		&__slider-body {
+			display: flex;
+			height: 100%;
+			position: relative;
+		}
+
+		&__item {
+			position: relative;
+			margin: 0 15px;
+			width: 50%!important;
+			height: 295px;
+		}
+
+		&__img {
+			position: absolute;
+			top:0;
+			left:0;
+			width: 100%;
+			height: 100%;
+		}
+		&__text-top {
+			position: absolute;
+			top: 63%;
+			left: 15%;
+			font-family: Roboto;
+			width: 171px;
+			text-align: center;
+			font-size: 18px;
+			line-height: 1.2;
+			font-weight: 700;
+			text-transform: uppercase;
+			color: #ffffff;
+		}
+		&__text-bottom{
+			position: absolute;
+			font-family: Roboto;
+			top:79%;
+			left: 17%;
+			width: 149px;
+			text-align: center;
+			font-size: 18px;
+			line-height: 1.2;
+			font-weight: 400;
+			color: #a36708;
+		}
+		&__text{
+			position: absolute;
+			text-align: center;
+			top:24%;
+			left:9%;
+			transform: rotate(-10deg);
+			font-family: Roboto;
+			font-size: 33.9px;
+			line-height: 45px;
+			font-weight: 900;
+			color: #000000;
+			> span {
+				display: block;
+				font-size: 20.3px;
+				line-height: 30px;
+				font-weight: 900;
+			}
+		}
+		&__circle {
+			position: absolute;
+			top: 63%;
+			left:273px;
+			width: 74px;
+			height: 74px;
+			border-radius: 50%;
+			background-color: #D42428;
+		}
+
+		&__in-ciecle {
+			position: absolute;
+			left: 50%;
+			top: 50%;
+			transform: translate(-50%, -50%);
+			width: 40px;
+			height: 25px;
+			border-radius: 5px;
+			background-color: #fff;
+		}
+
+		&__arrow {
+			position: absolute;
+			left:55%;
+			top:50%;
+			transform: translate(-50%,-50%);
+			border-top: 8px solid transparent;
+    		border-left: 13px solid #D42428;
+    		border-bottom: 8px solid transparent;
+		}
+}
+
+/*=====last-text================================================================================================*/
+.last-text {
+		padding:100px 0 75px 0;
+		position: relative;
+		&__text {
+			margin:0 15px;
+			padding:15px 15px 0 0;
+			height: 90px;
+			overflow-y:scroll;
+			font-family: Roboto;
+			font-size: 13px;
+			line-height: 1.2;
+			font-weight: 400;
+			color: #7c7373;
+		}
+		&__arrow-top {
+			position: absolute;
+			left: 100%;
+			top:64%;
+			width: 76px;
+			height: 76px;
+			background-color: #FBC063;
+			> div {
+				position:absolute;
+				left:50%;
+				top:50%;
+				transform: translate(-50%,-50%);
+				width: 30px;
+				height: 43px;
+				background: #F7F7F7;
+				clip-path: polygon(0 50%, 50% 0, 100% 47%, 75% 48%, 75% 100%, 23% 100%, 23% 50%);
 			}
 		}
 }

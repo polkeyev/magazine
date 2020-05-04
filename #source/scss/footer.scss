@@ -1,5 +1,194 @@
 footer{}
 //====================================================================================================
+.footer {
+    display: flex;
+    flex-direction: column;
+    background: #403C3B;
+    padding: 30px 0 0 0;
+		&__top {
+		}
+
+		&__bottom {
+            background: #383434;
+		}
+}
+.foot-text {
+    font-family: Roboto;
+    font-size: 16px;
+    line-height: 40px;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: #ffffff;
+}
+.footer-top {
+        display: flex;
+        padding: 0 0 57px 0;
+        margin: 0 15px;
+		&__item-logo {
+		}
+
+		&__item-menu {
+		}
+
+		&__item-contact {
+		}
+}
+.item-logo {
+
+		&__logo-img {
+
+		}
+
+		&__text {
+            width: 239px;
+            margin: 22px 0 0 0;
+            > p {
+                font-family: Roboto;
+                font-size: 16px;
+                line-height: 26px;
+                font-weight: 500;
+                text-transform: uppercase;
+                color: #fefefe;
+            }
+		}
+
+		&__form {
+            margin: 20px 0 0 0;
+            > form > input{
+                width: 360px;
+                height: 38px;
+                background: #403C3B url(../img/icons/letter3.svg) no-repeat;
+                background-position-y: 50%;
+                background-position-x: 315px;
+                border:1px solid #9F9D9D;
+                padding: 0 0 0 11px;
+                font-family: Roboto;
+                font-size: 14px;
+                line-height: 22px;
+                font-weight: 400;
+                color: #fefefe;
+                &::placeholder {
+                    color: #F9F9F9;
+                }
+            }
+		}
+}
+.item-menu {
+        margin: 0 92px 0 92px;
+        
+        & li  a {
+            font-family: Roboto;
+            font-size: 15px;
+            line-height: 34px;
+            font-weight: 400;
+            color: #998985;
+            &:hover {
+                color: #fefefe;
+            }
+        }
+        &__text {
+            margin: 0 0 12px 0;
+		}
+        
+        &__item-wrapper{
+            display: flex;
+        }
+        
+        &__menu {
+
+		}
+
+		&__left {
+            margin: 0 55px 0 0;
+		}
+
+		&__right {
+		}
+}
+.item-contact {
+
+		&__text {
+            margin: 0 0 12px 0;
+		}
+
+		&__fhone {
+            ul li a {
+                color: #ffffff;
+                &:hover {
+                    color: #998985;
+                } 
+            }
+		}
+
+		&__mail-wrapper {
+            margin: 18px 0 0 0;
+            ul li {
+                margin: 0px 0 0 39px;
+            }
+            ul li a {
+                color: #ffffff;
+                &:hover {
+                    color: #998985;
+                } 
+            }
+		}
+
+		&__mail {
+
+		}
+
+		&__social {
+            justify-content: flex-start;
+            margin: 25px 0 0 0;
+            > a {
+                border-radius: 50%;
+                background: white;
+            }
+		}
+}
+
+.footer-bottom {
+
+		&__wrapper {
+            margin: 0 15px;
+            padding: 17px 0;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+		}
+
+		&__item-nav {
+            nav ul {
+                display: flex;
+                li {
+                    a {
+                       font-family: Roboto;
+                    font-size: 14px;
+                    line-height: 1.2;
+                    font-weight: 400;
+                    color: #8b8787;
+                    margin: 0 30px 0 0;
+                        &:hover {
+                            color:#fff;
+                        }
+                    }
+                    &:last-child{
+                        margin:0;
+                    }
+                }
+            }
+		}
+
+		&__item-copyrigth {
+            p {
+                font-family: Roboto;
+                font-size: 14px;
+                line-height: 34px;
+                font-weight: 400;
+                color: #8b8787;
+            }
+		}
+}
 
 //====================================================================================================
 
