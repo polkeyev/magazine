@@ -468,8 +468,8 @@ header {
 		}
 }
 
-body.mouse .catalog__list>li:hover .sub-catalog__list{display: block;}
-body.mouse .sub-catalog__list>li:hover .last-catalog__list{display: block;}
+/*body.mouse*/ .catalog__list>li:hover .sub-catalog__list{display: block;}
+/*body.mouse*/ .sub-catalog__list>li:hover .last-catalog__list{display: block;}
 
 //====================================================================================================
 /*
