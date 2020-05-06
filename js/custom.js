@@ -163,18 +163,35 @@ $(document).ready(function () {
         autohidemode: 'leave'
     });
 
-    (function ($) {
-        $(function () {
 
-            $('#up').click(function () {
-                $('html, body').animate({ scrollTop: 0 }, 5000);
-                return false;
-            })
 
-        })
+    $('#up').click(function () {
+        $('html, body').animate({ scrollTop: 0 }, 1000);
+        return false;
     })
 
-    $('.')
+
+    $('.enter').click(function () {
+        $('.popup-enter').addClass('active')
+        $('.popup-registration').removeClass('active')
+    })
+
+    $('.registration').click(function () {
+        $('.popup-registration').addClass('active')
+        $('.popup-enter').removeClass('active')
+    })
+
+    $('.product-item__link').click(function () {
+        $('.popup-buy').addClass('active')
+    })
+
+    $('.close').click(function () {
+        $('.popup-registration,.popup-enter,.popup-buy').removeClass('active')
+    })
+
+
+
+
 
     let lm = document.querySelector('.img1')
     $('.product-card__slider-body, .stock-product__slider-body').mouseover(function (event) {

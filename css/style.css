@@ -165,6 +165,9 @@ body.lock {
 	position: relative;
 	cursor: pointer;
 }
+.title > div:hover span {
+	background: #fe9b00;
+}
 .title > div span {
 	position: absolute;
 	width: 25px;
@@ -173,6 +176,9 @@ body.lock {
 	display: block;
 	top: 50%;
 	left: -2%;
+	-webkit-transition: 0.2s;
+	-o-transition: 0.2s;
+	transition: 0.2s;
 }
 .title > div span:first-child {
 	-webkit-transform: rotate(45deg);
@@ -540,6 +546,10 @@ body.lock {
 .form-buy__continue:hover {
 	background: #fff;
 	color: #000;
+}
+
+.active {
+	display: block;
 }
 
 header {

@@ -45,8 +45,8 @@
 									alt=""></a>
 						</div>
 						<div class="info-top__login">
-							<a class="pl" href="">Вход/</a>
-							<a href="">регистрация</a>
+							<a class="enter" href="#">Вход/</a>
+							<a class="registration" href="#">регистрация</a>
 						</div>
 					</div>
 				</div>
@@ -807,7 +807,7 @@
 		<div class="registration-form form-block">
 			<div class="registration-form__title title">
 				<p>Регистрация</p>
-				<div>
+				<div class="close">
 					<span></span>
 					<span></span>
 				</div>
@@ -835,7 +835,8 @@
 					<input type="submit" name="registration" value=" Регистрация">
 				</div>
 			</form>
-			<p class="registration-form__sub-title sub-title-form">или <a href="#">войдите</a>,если у вас уже есть
+			<p class="registration-form__sub-title sub-title-form">или <a class="enter" href="#">войдите</a>,если у вас
+				уже есть
 				аккаунт </p>
 		</div>
 	</div>
@@ -843,7 +844,7 @@
 		<div class="enter-form form-block">
 			<div class="enter-form__title title">
 				<p>Вход</p>
-				<div>
+				<div class="close">
 					<span></span>
 					<span></span>
 				</div>
@@ -853,21 +854,22 @@
 					<input type="text" name="mail" placeholder="Email">
 				</div>
 				<div class="enter-form__password password">
-					<input type="password" name="password" placeholder="Пароль">
+					<input id="password" type="password" name="password" placeholder="Пароль">
 				</div>
 				<p class="enter-form__restablish-pass"> <a href=" #"> Забыли пароль?</a> </p>
 				<div class="enter-form__btn btn">
 					<input type="submit" name="registration" value=" Вход">
 				</div>
 			</form>
-			<p class="enter-form__sub-title sub-title-form">У меня еще нет аккаунта. <a href="">Регистранция.</a>
+			<p class="enter-form__sub-title sub-title-form">У меня еще нет аккаунта. <a class="registration"
+					href="#">Регистранция.</a>
 			</p>
 		</div>
 	</div>
 	<div class="popup popup-buy">
 		<div class="form-buy">
 			<div class="form-buy__title title">
-				<div>
+				<div class="close">
 					<span></span>
 					<span></span>
 				</div>
