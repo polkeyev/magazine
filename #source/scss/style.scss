@@ -8,7 +8,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap');
 //</Подключаем шрифты>=======================================================================================
 
-//<Иконочные шрифты>==========================================================================================
+//<Иконочные шрифты>=================================== =======================================================
 
 //</Иконочные шрифты>==========================================================================================
 
@@ -42,7 +42,8 @@ body {
 .wrapper {
 	width: 100%;
 	min-height: 100%;
-	/*overflow-x: hidden;*/
+	overflow-x: hidden;
+	position: relative;
 	&.loaded {
 	}
 }
@@ -138,6 +139,10 @@ body {
 	&:hover {
 		background-image: url(../img/icons/p-lefty.svg);
 	}
+	@media (max-width: 762px) {
+		top: 50%;
+    	right: 91.2%;			
+	}
 }
 /* Стрелка вправо */
 .slick-arrow.slick-next{
@@ -146,6 +151,10 @@ body {
 	background-image: url(../img/icons/p-right.svg);
 	&:hover {
 		background-image: url(../img/icons/p-righty.svg);
+	}
+	@media (max-width: 762px) {
+		left: 91.2%;
+    	top: 50%;			
 	}
 }
 /* Стрелка не активная */
@@ -231,6 +240,16 @@ body {
 		&__wrapper {
 			width: 100%;
 			height: 430px;
+			@media (max-width: 616px) {
+				height: 335px;
+			}
+			@media (max-width: 552px) {
+				height: 301px;
+			}
+			@media (max-width: 392px) {
+				height: 260px;
+			}
+
 		}
 
 		&__body {
@@ -268,7 +287,31 @@ body {
     			background-color: rgb(55%, 53%, 53%, 0.8);
     			width: 50%;
     			height: 87%;
-    			border-radius: 125% 0 122% 221%;
+				border-radius: 125% 0 122% 221%;
+				@media (max-width: $md2+px) {
+					border-radius: 93% 0 97% 148%;
+				}
+				@media (max-width: 762px) {
+					border-radius: 110% 0 107% 131%;
+					top: -32%;
+				}
+				@media (max-width: 616px) {
+					border-radius: 101% 0 117% 186%;
+    				top: -45%;
+				}
+				@media (max-width: 552px) {
+					border-radius: 124% 0 120% 216%;
+					top: -32%;
+					width: 67%;
+    				height: 85%;
+				}
+				@media (max-width: 392px) {
+					border-radius: 124% 0 217% 216%;
+				}
+				@media (max-width: 392px) {
+					left: 33%;
+					width: 83%;
+				}
 				h2 {
 					position: absolute;
 					top: 50%;
@@ -281,6 +324,33 @@ body {
 					font-weight: 700;
 					text-transform: uppercase;
 					color: #ffffff;
+					@media (max-width: $md1+px) {
+						font-size:30px;
+					}
+					@media (max-width: $md2+px) {
+						top: 43%;
+						left: 53%;
+						font-size: 23px;
+					}
+					@media (max-width: 762px) {
+						top: 55%;
+    					left: 53%;
+						font-size: 19px;
+						width: 47%;
+					}
+					@media (max-width: 616px) {
+						top: 67%;
+    					left: 53%;
+						font-size: 17px;
+						line-height: 30px;
+					}
+					@media (max-width: 552px) {
+						top: 54%;
+    					left: 49%;
+					}
+					@media (max-width: 392px) {
+						font-size: 14px;
+					}
 				}
 				h3 {
 					position: absolute;
@@ -292,6 +362,28 @@ body {
 					line-height: 1.2;
 					font-weight: 400;
 					color: #ffffff;
+					@media (max-width: $md2+px) {
+						top: 62%;
+						left: 53%;
+						font-size: 20px;
+					}
+					@media (max-width: 762px) {
+						top: 70%;
+    					left: 47%;
+    					font-size: 20px;
+					}
+					@media (max-width: 616px) {
+						top: 80%;
+    					left: 49%;
+    					font-size: 17px;
+					}
+					@media (max-width: 552px) {
+						top: 73%;
+    					left: 44%;
+					}
+					@media (max-width: 392px) {
+						font-size: 14px;
+					}
 				}
 			}
 
@@ -303,6 +395,18 @@ body {
 				height: 134px;
 				border-radius: 50%;
 				background-color: #ff9c00;
+				@media (max-width: 616px) {
+					top: 29%;
+    				width: 101px;
+    				height: 100px;
+				}
+				@media (max-width: 552px) {
+					top: 38%;
+				}
+				@media (max-width: 392px) {
+					width: 80px;
+    				height: 80px;
+				}
 				h2 {
 					position: absolute;
 					left: 50%;
@@ -313,12 +417,23 @@ body {
 					font-weight: 400;
 					color: #35302d;
 					text-align: center;
+					@media (max-width: 616px) {
+						font-size: 16px;
+						line-height: 0px;
+					}
 					span {
 						font-size: 40px;
 						line-height: 56px;
 						font-weight: 700;
 						text-transform: uppercase;
 						color: #ffffff;
+						@media (max-width: 616px) {
+							font-size: 35px;
+						}
+						@media (max-width: 392px) {
+							line-height: 44px;
+							font-size: 30px;
+						}
 					}
 				}
 			}
@@ -399,6 +514,11 @@ body {
 	justify-content: flex-end;
 	padding: 43px 10px 43px 10px;
 	position: relative;
+	@media (max-width: 366px) {
+		flex-direction: column;
+		padding: 21px 10px 10px 10px;
+	}
+	
 	h2 {
 		margin:0 auto;
 		font-family: Roboto;
@@ -420,6 +540,12 @@ body {
 		color: #ff9c00;
 		&:hover {
 			color: #7c7373;
+		}
+		@media (max-width: 568px) {
+			position: static;
+		}
+		@media (max-width: 366px) {
+			margin: 10px 0 0 0;
 		}
 	}
 }
@@ -461,6 +587,9 @@ body {
 			line-height: 22px;
 			font-weight: 700;
 			color: #000000;
+			@media (max-width: 480px) {
+			    font-size: 14px;
+			}
 			span {
 				font-size: 16px;
 				font-weight: 400;
@@ -488,6 +617,12 @@ body {
 			&:hover {
 				background: url(../img/bakcgraund/bagw.jpg);
 				color: #010101;
+			}
+			@media (max-width: 453px) {
+				background-size: cover;
+			}
+			@media (max-width: 480px) {
+			    padding: 8px 0 8px 0;
 			}
 			>img {
 				left: 72px;
@@ -577,6 +712,10 @@ body {
 			display: flex;
 			justify-content: space-between;
 			align-items: center;
+			@media (max-width: $md3+px) {
+				flex-direction: column;
+				padding: 18px 0px;
+			}
 		}
 
 		&__text {
@@ -586,12 +725,23 @@ body {
 			font-weight: 500;
 			text-transform: uppercase;
 			color: #fefefe;
+			@media (max-width: 450px) {
+				text-align: center;
+			}
 		}
 
 		&__form {
 			width: 458px;
 			height: 38px;
 			border:1px solid #4CCBC4;
+			@media (max-width: $md1+px) {
+				width: 50%;
+			}
+			@media (max-width: $md3+px) {
+				width: 60%;
+				margin: 5px 0;
+			}
+
 			
 			input {
 				width: 100%;
@@ -611,6 +761,9 @@ body {
 					background-position-y: 50%;
 					background-position-x: 410px;
 
+				}
+				@media (max-width: $md3+px) {
+					background-position-x: 97%;
 				}
 				
 			}
@@ -634,6 +787,9 @@ body {
 		&__wrapper {
 			display: flex;
 			justify-content: space-between;
+			@media (max-width: 790px) {
+			    flex-wrap: wrap;
+			}
 		}
 
 		&__item {
@@ -647,6 +803,9 @@ body {
 			justify-content: center;
 			background-color: #fff;
 			box-shadow: 0 0 100px #EBEBEB;
+			@media (max-width: 790px) {
+			    margin: 5px 15px
+			}
 			>img {
 				position: absolute;
 				left: 50%;
@@ -688,8 +847,14 @@ body {
 		&__item {
 			position: relative;
 			margin: 0 15px;
-			width: 50%!important;
+			width: 50%;
 			height: 295px;
+			@media (max-width: $md1+px) {
+				height: 266px;
+			}
+			@media (max-width: $md2+px) {
+				height: 211px;
+			}
 		}
 
 		&__img {
@@ -711,6 +876,10 @@ body {
 			font-weight: 700;
 			text-transform: uppercase;
 			color: #ffffff;
+			@media (max-width: $md2+px) {
+				left: 7%;
+				font-size: 14px;
+			}
 		}
 		&__text-bottom{
 			position: absolute;
@@ -723,6 +892,10 @@ body {
 			line-height: 1.2;
 			font-weight: 400;
 			color: #a36708;
+			@media (max-width: $md2+px) {
+				left: 11%;
+				font-size: 16px;
+			}
 		}
 		&__text{
 			position: absolute;
@@ -735,11 +908,27 @@ body {
 			line-height: 45px;
 			font-weight: 900;
 			color: #000000;
+			@media (max-width: $md1+px) {
+				top: 23%;
+				left: 8%;
+				font-size: 24.9px;
+			}
+			@media (max-width: $md2+px) {
+				font-size: 21.9px;
+				transform: rotate(-11deg);
+				line-height: 32px;
+			}
 			> span {
 				display: block;
 				font-size: 20.3px;
 				line-height: 30px;
 				font-weight: 900;
+				@media (max-width: $md1+px) {
+					font-size: 17.3px;
+				}
+				@media (max-width: $md2+px) {
+					font-size:13.3px;
+				}
 			}
 		}
 		&__circle {
@@ -750,6 +939,10 @@ body {
 			height: 74px;
 			border-radius: 50%;
 			background-color: #D42428;
+			@media (max-width: $md2+px) {
+				top: 51%;
+    			left: 52%;
+			}
 		}
 
 		&__in-ciecle {
@@ -777,7 +970,6 @@ body {
 /*=====last-text================================================================================================*/
 .last-text {
 		padding:100px 0 75px 0;
-		position: relative;
 		&__text {
 			margin:0 15px;
 			padding:15px 15px 0 0;
@@ -791,8 +983,8 @@ body {
 		}
 		&__arrow-top {
 			position: absolute;
-			left: 100%;
-			top:64%;
+			left: 93%;
+			top:84%;
 			width: 76px;
 			height: 76px;
 			background-color: #FBC063;

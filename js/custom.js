@@ -29,9 +29,9 @@ $(document).ready(function () {
         /*asNavFor:"nameSlider"подключение еще одного слайдера*/
         responsive: [/*Настройки при адаптиве*/
             {
-                breakpoint: 768,
+                breakpoint: 617,
                 settings: {
-                    autoplaySpeed: 4000,
+                    arrows: false,
                 }
             }
         ],
@@ -68,9 +68,21 @@ $(document).ready(function () {
         /*asNavFor:"nameSlider"подключение еще одного слайдера*/
         responsive: [/*Настройки при адаптиве*/
             {
-                breakpoint: 768,
+                breakpoint: 991.98,
                 settings: {
-                    autoplaySpeed: 4000,
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 603,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 352,
+                settings: {
+                    slidesToShow: 1,
                 }
             }
         ],
@@ -107,9 +119,21 @@ $(document).ready(function () {
         /*asNavFor:"nameSlider"подключение еще одного слайдера*/
         responsive: [/*Настройки при адаптиве*/
             {
-                breakpoint: 768,
+                breakpoint: 991.98,
                 settings: {
-                    autoplaySpeed: 4000,
+                    slidesToShow: 3,
+                }
+            },
+            {
+                breakpoint: 603,
+                settings: {
+                    slidesToShow: 2,
+                }
+            },
+            {
+                breakpoint: 352,
+                settings: {
+                    slidesToShow: 1,
                 }
             }
         ],
@@ -170,6 +194,9 @@ $(document).ready(function () {
         return false;
     })
 
+    $('.icon-menu').click(function () {
+        $('.icon-menu, .menu-wrapper').toggleClass('active')
+    })
 
     $('.enter').click(function () {
         $('.popup-enter').addClass('active')
@@ -188,10 +215,6 @@ $(document).ready(function () {
     $('.close').click(function () {
         $('.popup-registration,.popup-enter,.popup-buy').removeClass('active')
     })
-
-
-
-
 
     let lm = document.querySelector('.img1')
     $('.product-card__slider-body, .stock-product__slider-body').mouseover(function (event) {
