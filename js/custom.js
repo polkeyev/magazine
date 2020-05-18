@@ -170,9 +170,9 @@ $(document).ready(function () {
         /*asNavFor:"nameSlider"подключение еще одного слайдера*/
         responsive: [/*Настройки при адаптиве*/
             {
-                breakpoint: 768,
+                breakpoint: 658,
                 settings: {
-                    autoplaySpeed: 4000,
+                    slidesToShow: 1,
                 }
             }
         ],

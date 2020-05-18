@@ -1778,11 +1778,42 @@ header {
 	top: 90%;
 	left: 50%;
 }
+@media (max-width: 746px) {
+	.slick-dots {
+		left: 47%;
+	}
+}
+@media (max-width: 601px) {
+	.slick-dots {
+		left: 45%;
+		top: 86%;
+	}
+}
+@media (max-width: 434px) {
+	.slick-dots {
+		left: 40%;
+	}
+}
 
 .top-footer__slider-body > .slick-dots {
 	top: 110%;
 	left: 45%;
 	z-index: 2;
+}
+@media (max-width: 939px) {
+	.top-footer__slider-body > .slick-dots {
+		left: 42%;
+	}
+}
+@media (max-width: 433px) {
+	.top-footer__slider-body > .slick-dots {
+		left: 39%;
+	}
+}
+@media (max-width: 345px) {
+	.top-footer__slider-body > .slick-dots {
+		left: 33%;
+	}
 }
 
 .slick-dots li {
@@ -2578,6 +2609,26 @@ header {
 		height: 211px;
 	}
 }
+@media (max-width: 700px) {
+	.top-footer__item {
+		height: 190px;
+	}
+}
+@media (max-width: 658px) {
+	.top-footer__item {
+		height: 260px;
+	}
+}
+@media (max-width: 422px) {
+	.top-footer__item {
+		height: 220px;
+	}
+}
+@media (max-width: 356px) {
+	.top-footer__item {
+		height: 200px;
+	}
+}
 .top-footer__img {
 	position: absolute;
 	top: 0;
@@ -2604,6 +2655,51 @@ header {
 		font-size: 14px;
 	}
 }
+@media (max-width: 700px) {
+	.top-footer__text-top {
+		left: 4%;
+		font-size: 11px;
+	}
+}
+@media (max-width: 658px) {
+	.top-footer__text-top {
+		left: 16%;
+		font-size: 17px;
+	}
+}
+@media (max-width: 532px) {
+	.top-footer__text-top {
+		left: 13%;
+	}
+}
+@media (max-width: 477px) {
+	.top-footer__text-top {
+		left: 11%;
+		font-size: 14px;
+	}
+}
+@media (max-width: 429px) {
+	.top-footer__text-top {
+		left: 8%;
+	}
+}
+@media (max-width: 429px) {
+	.top-footer__text-top {
+		left: 7%;
+		font-size: 12px;
+	}
+}
+@media (max-width: 374px) {
+	.top-footer__text-top {
+		left: 5%;
+	}
+}
+@media (max-width: 349px) {
+	.top-footer__text-top {
+		left: 1%;
+		font-size: 11px;
+	}
+}
 .top-footer__text-bottom {
 	position: absolute;
 	font-family: Roboto;
@@ -2620,6 +2716,44 @@ header {
 	.top-footer__text-bottom {
 		left: 11%;
 		font-size: 16px;
+	}
+}
+@media (max-width: 700px) {
+	.top-footer__text-bottom {
+		left: 8%;
+		font-size: 13px;
+	}
+}
+@media (max-width: 658px) {
+	.top-footer__text-bottom {
+		left: 18%;
+		font-size: 15px;
+	}
+}
+@media (max-width: 532px) {
+	.top-footer__text-bottom {
+		left: 15%;
+	}
+}
+@media (max-width: 477px) {
+	.top-footer__text-bottom {
+		left: 14%;
+		font-size: 13px;
+	}
+}
+@media (max-width: 429px) {
+	.top-footer__text-bottom {
+		left: 12%;
+	}
+}
+@media (max-width: 374px) {
+	.top-footer__text-bottom {
+		left: 8%;
+	}
+}
+@media (max-width: 349px) {
+	.top-footer__text-bottom {
+		left: 5%;
 	}
 }
 .top-footer__text {
@@ -2652,6 +2786,46 @@ header {
 		line-height: 32px;
 	}
 }
+@media (max-width: 700px) {
+	.top-footer__text {
+		font-size: 18.9px;
+		top: 26%;
+	}
+}
+@media (max-width: 658px) {
+	.top-footer__text {
+		-webkit-transform: rotate(-9deg);
+		    -ms-transform: rotate(-9deg);
+		        transform: rotate(-9deg);
+	}
+}
+@media (max-width: 477px) {
+	.top-footer__text {
+		-webkit-transform: rotate(-11deg);
+		    -ms-transform: rotate(-11deg);
+		        transform: rotate(-11deg);
+		left: 10%;
+		font-size: 16.9px;
+	}
+}
+@media (max-width: 398px) {
+	.top-footer__text {
+		left: 12%;
+		font-size: 11.9px;
+	}
+}
+@media (max-width: 369px) {
+	.top-footer__text {
+		-webkit-transform: rotate(-12deg);
+		    -ms-transform: rotate(-12deg);
+		        transform: rotate(-12deg);
+	}
+}
+@media (max-width: 345px) {
+	.top-footer__text {
+		left: 9%;
+	}
+}
 .top-footer__text > span {
 	display: block;
 	font-size: 20.3px;
@@ -2666,6 +2840,28 @@ header {
 @media (max-width: 991.98px) {
 	.top-footer__text > span {
 		font-size: 13.3px;
+	}
+}
+@media (max-width: 700px) {
+	.top-footer__text > span {
+		font-size: 10.3px;
+		line-height: 10px;
+	}
+}
+@media (max-width: 658px) {
+	.top-footer__text > span {
+		font-size: 16.3px;
+		line-height: 30px;
+	}
+}
+@media (max-width: 477px) {
+	.top-footer__text > span {
+		font-size: 13.3px;
+	}
+}
+@media (max-width: 398px) {
+	.top-footer__text > span {
+		font-size: 10.3px;
 	}
 }
 .top-footer__circle {
