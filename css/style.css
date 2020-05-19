@@ -2377,6 +2377,11 @@ header {
 	background-color: #00b5ab;
 	position: relative;
 }
+@media (max-width: 445px) {
+	.product-item__sub-link_img {
+		display: none;
+	}
+}
 .product-item__sub-link_img > img {
 	width: 78%;
 	height: 78%;
@@ -2394,6 +2399,12 @@ header {
 	line-height: 1.2;
 	font-weight: 400;
 	color: #00b5ab;
+}
+@media (max-width: 445px) {
+	.product-item__sub-link_link {
+		margin: 0;
+		text-align: center;
+	}
 }
 
 /*===stock-product===================================================================================*/

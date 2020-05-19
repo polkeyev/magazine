@@ -671,13 +671,15 @@ body {
 			&:hover .product-item__sub-link_link {
 				color:#7c7373;
 			}
-
 			&_img {
 				width: 25px;
 				height: 25px;
 				border-radius: 50%;
 				background-color: #00b5ab;
 				position: relative;
+				@media (max-width: 445px) {
+					display: none;	
+				}
 				>img {
 					width: 78%;
 					height: 78%;
@@ -695,6 +697,10 @@ body {
 				line-height: 1.2;
 				font-weight: 400;
 				color: #00b5ab;
+				@media (max-width: 445px) {
+					margin:0;
+					text-align: center;	
+				}
 			}
 		}
 }
