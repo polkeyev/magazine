@@ -443,6 +443,24 @@ body.lock {
 	display: none;
 }
 
+@media (max-width: 450px) {
+	.enter-form {
+		width: 80%;
+		padding: 10px;
+	}
+}
+@media (max-width: 450px) {
+	.enter-form__form {
+		width: 100%;
+	}
+}
+@media (max-width: 450px) {
+	.enter-form__btn input {
+		width: 100%;
+		background-position-x: 40%;
+	}
+}
+
 .enter-form__restablish-pass {
 	text-align: center;
 	margin: 15px 0 20px 0;
@@ -460,9 +478,21 @@ body.lock {
 	background-position-y: 50%;
 	background-position-x: 105px;
 }
+@media (max-width: 450px) {
+	.enter-form__btn input {
+		width: 100%;
+		background-position-x: 40%;
+	}
+}
 .enter-form__btn input:hover {
 	background-position-y: 50%;
 	background-position-x: 105px;
+}
+@media (max-width: 450px) {
+	.enter-form__btn input:hover {
+		width: 100%;
+		background-position-x: 40%;
+	}
 }
 .popup-buy {
 	display: none;
@@ -551,6 +581,21 @@ body.lock {
 
 .active {
 	display: block;
+}
+@media (max-width: 307px) {
+	.active {
+		width: 107%;
+	}
+}
+@media (max-width: 281px) {
+	.active {
+		width: 114%;
+	}
+}
+@media (max-width: 263px) {
+	.active {
+		width: 122%;
+	}
 }
 
 header {
@@ -1293,12 +1338,10 @@ header {
 	font-weight: 900;
 }
 /*=========================================================================================================*/
-/*body.mouse*/
 .catalog__list > li:hover .sub-catalog__list {
 	display: block;
 }
 
-/*body.mouse*/
 .sub-catalog__list > li:hover .last-catalog__list {
 	display: block;
 }
