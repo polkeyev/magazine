@@ -1115,13 +1115,36 @@ body {
 			width: 76px;
 			height: 76px;
 			background-color: #FBC063;
+			@media (max-width: 1170px) {
+				width: 70px;
+    			height: 70px;
+			}
+			@media (max-width: 957px) {
+				width: 50px;
+    			height: 50px;
+			}
+			@media (max-width: 767px) {
+				left: 91%;
+    			top: 88%;
+			}
+			@media (max-width: 767px) {
+				left: 87%;
+			}
+			@media (max-width: 446px) {
+				left: 84%;
+				top: 87%;
+			}
+			@media (max-width: 400px) {
+				left: 80%;
+    			top: 86%;
+			}
 			> div {
 				position:absolute;
 				left:50%;
 				top:50%;
 				transform: translate(-50%,-50%);
-				width: 30px;
-				height: 43px;
+				width: 100%;
+				height: 100%;
 				background: #F7F7F7;
 				clip-path: polygon(0 50%, 50% 0, 100% 47%, 75% 48%, 75% 100%, 23% 100%, 23% 50%);
 			}
