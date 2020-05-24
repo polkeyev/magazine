@@ -94,6 +94,10 @@
 		width: 440px;
 		padding:30px 39px;
 		background: #fff;
+		@media (max-width: 450px) {
+			width: 80%;
+    		padding: 10px;	
+		}
 }
 
 .name {
@@ -245,6 +249,10 @@
 		font-size: 15px;
 		font-weight: 400;
 		line-height: 22px;
+		@media (max-width: 450px) {
+			width: 100%;
+			background-position-x: 40%;
+		}
 		&:hover {
 			background-color: #fff;
 			color:#000;
@@ -253,6 +261,10 @@
 			background-repeat: no-repeat;
 			background-position-y: 50%;
 			background-position-x: 74px;
+				@media (max-width: 450px) {
+					width: 100%;
+					background-position-x: 40%;
+				}
 			}	
 		}
 }
@@ -301,6 +313,14 @@
 		}
 
 		&__btn {
+			input {
+				@media (max-width: 450px) {
+					background-position-x: 30%;
+				}
+				@media (max-width: 383px) {
+					background-position-x: 25%;
+				}
+			}
 		}
 
 		&__sub-title {
@@ -350,12 +370,6 @@
 		}
 
 		&__btn {
-			input {
-				@media (max-width: 450px) {
-					width: 100%;
-					background-position-x: 40%;
-				}
-			}
 		}
 }
 
@@ -426,6 +440,10 @@
 	width: 440px;
 	background: #fff;
 	padding:25px;
+		@media (max-width: 450px) {
+			width: 80%;
+			padding:15px;
+		}
 	a {
 		display: block;
 		width: 293px;
@@ -438,6 +456,9 @@
 		text-transform: uppercase;
 		color:#fff;
 		transition: 0.3s;
+		@media (max-width: 450px) {
+			width: 100%;
+		}
 		
 	}
 		&__title {
@@ -449,6 +470,9 @@
 			width: 293px;
 			padding: 0 7px;
 			margin: 0 auto;
+			@media (max-width: 450px) {
+				width: 100%;
+			}
 			p {
 				color: #010101;
 				font-family: Roboto;
@@ -473,6 +497,12 @@
 				background-repeat: no-repeat;
 				background-position-y: 50%;
 				background-position-x: 60px;
+			}
+			@media (max-width: 450px) {
+				background-position-x: 20%;
+			}
+			@media (max-width: 299px) {
+				background-position-x: 10%;
 			}
 		}
 

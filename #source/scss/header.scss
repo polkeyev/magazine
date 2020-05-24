@@ -125,7 +125,7 @@ header {
 			display: flex;
 			justify-content: space-between;
 			@media (max-width: $md3+px) {
-				display:none;
+				display: none;
 			}
 		}
 
@@ -313,8 +313,10 @@ header {
 		}
 }
 .catalog {
+		position: relative;
 	    margin: 28px 0 0 0;
 		&__list {
+			cursor: pointer;
 			@media (max-width: $md2+px) {
 				width: 150px;
 			}
@@ -365,6 +367,14 @@ header {
 			}
 			
 		}
+}
+.catalog-div{
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	z-index: 3;
 }
 .sub-catalog {
 
@@ -696,9 +706,14 @@ header {
 
 
 /*=========================================================================================================*/
-.catalog__list>li:hover .sub-catalog__list{display: block;}
-.sub-catalog__list>li:hover .last-catalog__list{display: block;}
-
+/*.catalog__list>li:hover .sub-catalog__list{display: block;}
+.sub-catalog__list>li:hover .last-catalog__list{display: block;}*/
+.mobile-sub-catalog__list.block {
+	display: block;
+}
+.last-catalog__list.block {
+	display: block;
+}
 //====================================================================================================
 
 	

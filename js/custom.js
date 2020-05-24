@@ -216,6 +216,15 @@ $(document).ready(function () {
         $('.popup-registration,.popup-enter,.popup-buy').removeClass('active')
     })
 
+    $('.header-mobile__row-buttom').click(function () {
+        $('.mobile-sub-catalog__list').toggleClass('block')
+    })
+
+    $('.mobile-sub-catalog__list .block"').click(function () {
+        $('.last-catalog__list').addClass('block')
+    })
+
+
     let lm = document.querySelector('.img1')
     $('.product-card__slider-body, .stock-product__slider-body').mouseover(function (event) {
         if (event.target.className == 'img1') {
